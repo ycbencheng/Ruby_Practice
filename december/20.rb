@@ -13,7 +13,7 @@ string_array = [
 ]
 
 def string_parser string_array
-  str.split.reverse.join(' ')
+  
 end
 
 describe "String Parser" do
