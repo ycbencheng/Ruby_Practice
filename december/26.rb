@@ -1,6 +1,18 @@
+#A year will be a leap year if it is divisible by 4 but not by 100. If a year is divisible by 4 and by 100, it is not a leap year unless it is also divisible by 400.
+
+#Find and store all of the leap years from the 20th century and store it in an array called leap_years.
+
 require 'rspec'
 
 years = (1900..1999).to_a
+
+leap_years = []
+
+years.each do |year| 
+  current_year = Date.new(year)
+  leap_years << year if current_year.leap?
+  end
+
 
 describe 'Leap year calculation' do
   it 'properly renders the leap years for the 20th century' do
