@@ -3,7 +3,7 @@
 #Find and store all of the leap years from the 20th century and store it in an array called leap_years.
 
 require 'rspec'
-
+require 'date'
 years = (1900..1999).to_a
 
 leap_years = []
