@@ -1,5 +1,5 @@
 
-#building a grocery list
+Items = {"ABC" => "$5", "DEF" => "$6",}
 def create_list
   print "What is the list name?"
   name = gets.chomp
