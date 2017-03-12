@@ -1,5 +1,4 @@
 
-Items = {"ABC" => "$5", "DEF" => "$6",}
 def create_list
   print "What is the list name?"
   name = gets.chomp
@@ -18,8 +17,6 @@ def add_list_item
   hash = {"name" => item_name, "quantity" => quantity}
   return hash
 end
-
-
 
 list = create_list()
 puts list.inspect
