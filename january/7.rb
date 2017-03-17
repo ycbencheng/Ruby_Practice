@@ -7,6 +7,7 @@ menu = {
 }
 
 def daily_special hash
+ 
 end
 
 describe 'Nested hash element selector' do
