@@ -2,13 +2,9 @@ require 'rspec'
 
 class String
   def total_words
-    scan(/\w+/).count
   end
 
   def word_list
-    list = Hash.new(0)
-    scan(/\w+/) {|word| list[word] += 1}
-    list
   end
 end
 

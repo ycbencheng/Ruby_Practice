@@ -1,14 +1,6 @@
-# Given any number of arrays containing strings, such as:
-
-# arr_1 = ['1', '5', '9']
-# arr_2 = ['10', '2', '7', '10']
-# arr_3 = ['3', '4', '0']
-# Merge all of the arrays into a single array and convert each of the strings to integers.
-
 require 'rspec'
 
 def array_converter *arrays
-  arrays.flatten.map(&:to_i)
 end
 
 describe 'Combine arrays and convert strings to integers' do

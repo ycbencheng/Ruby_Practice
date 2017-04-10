@@ -1,15 +1,7 @@
-# Exercise Description
-# Write a program that automatically generates an array containing 20 random integers, ranging from 1 to 1000.
-
-# Sample Output
-# => [695, 627, 849, 315, 203, 520, 433, 837, 923, 796, 6, 472, 964, 717, 549, 963, 787, 20, 589, 628]
-
 require 'rspec'
 
 def random_numbers
-  Array.new(20) { rand 1000 }
 end
-
 
 describe 'Random number collection generator' do
   it 'creates a collection of random numbers ranging from 0 to 999' do
