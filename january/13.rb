@@ -1,7 +1,16 @@
 require 'rspec'
 
-def hashed_fizz_buzz num
+def hashed_fizz_buzz(num)
+	hash = {
+		'Fizz': (num % 3 == 0) && (num % 5 != 0),
+		'Buzz': (num % 3 != 0) && (num % 5 == 0),
+		'FizzBuzz': (num % 3 == 0) && (num % 5 == 0),
+		num => (num % 3 != 0) && (num % 5 != 0)
+	}
+	hash.key(true)
 end
+(1..100).each {|num| puts hashed_fizz_buzz(num)}
+
 
 describe 'Hashed FizzBuzz' do
   it 'generates a fizz buzz hash' do
