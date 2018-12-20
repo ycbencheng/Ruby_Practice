@@ -1,6 +1,7 @@
 require 'rspec'
 
-def random_numbers
+def random_numbersd
+	Array.new(20) { rand 1000 }
 end
 
 describe 'Random number collection generator' do

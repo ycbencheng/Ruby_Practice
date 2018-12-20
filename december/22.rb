@@ -37,6 +37,7 @@ rangers = [
 ]
 
 def position_filter(headers, *data)
+  headers.zip(astros, rangers)
 end
 
 describe 'Position Filter' do
